@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!--barre etat-->
+  <h2>Welcome, <%= user.username %>!</h2>
+  <p>You are logged in as ID: <%= user.id %></p>
+  <a href="/logout">Logout</a>
+  <a href="/">Home</a>
+  <!--fin barre etat-->
+  <!--code html du dashboard-->
+  <!-- Header -->
+  <header>
+    <h1>Admin Dashboard</h1>
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Dashboard Cards -->
+    <div class="grid">
+      <!-- User Management -->
+      <div class="card admin-card">
+        <h2>👥 Users Management</h2>
+        <p>View, edit, or delete users with full permissions.</p>
+        <button class="btn-primary">Manage Users</button>
+      </div>
+
+      <!-- Content Management -->
+      <div class="card">
+        <h2>📝 Content Management</h2>
+        <p>Upload, edit, or delete articles, posts, and media.</p>
+        <button class="btn-primary">Manage Content</button>
+      </div>
+
+      <!-- Reports -->
+      <div class="card">
+        <h2>📊 Reports</h2>
+        <p>Generate analytics, logs, and system performance reports.</p>
+        <button class="btn-primary">View Reports</button>
+      </div>
+
+      <!-- System Settings -->
+      <div class="card">
+        <h2>⚙️ System Settings</h2>
+        <p>Configure site-wide preferences, themes, and permissions.</p>
+        <button class="btn-primary">Edit Settings</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      © 2025 Admin Dashboard — Built with HTML & CSS
+    </footer>
+  </div>
+
+  <!-- Optional: Add a Logout Button -->
+  <div class="container">
+    <button class="logout-btn">Logout</button>
+  </div>
+
+  <!--fin dashboard-->
+</body>
+</html>
